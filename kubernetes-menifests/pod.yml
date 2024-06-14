@@ -1,0 +1,15 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: uuid-generator
+  labels:
+    app: uuid-generator
+
+spec:
+  containers:
+  - name: uuid-container
+    image: pranit039/uuid-generator:v20240614
+    ports:
+    - containerPort: 8080

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: uuid-rs
+  labels:
+    app: uuid
+spec:
+  template:
+    metadata:
+      name: uuid-generator
+      labels:
+        app: uuid-generator
+
+    spec:
+      containers:
+      - name: uuid-container
+        image: pranit039/uuid-generator:v20240614
+        ports:
+        - containerPort: 8080
+  replicas: 3
+  selector:
+    matchLabels:
+      app: uuid-generator
+  
+
+
+
+
