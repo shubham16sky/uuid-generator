@@ -33,7 +33,7 @@ This is a simple API to generate UUIDs, built using FastAPI. The API provides tw
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/shubham16sky/uuid-generator-api.git
+    git clone https://github.com/shubham16sky/uuid-generator.git
     cd uuid-generator-api
     ```
 
@@ -53,7 +53,7 @@ This is a simple API to generate UUIDs, built using FastAPI. The API provides tw
 4. **Run the application:**
 
     ```sh
-    uvicorn main:app --reload
+    uvicorn app/main:app --reload
     ```
 
 ## Kubernetes Deployment
