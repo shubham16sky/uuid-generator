@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: uuid-deployment
   labels:
-    app: uuid
+    app: uuid-generator
 spec:
   template:
     metadata:
