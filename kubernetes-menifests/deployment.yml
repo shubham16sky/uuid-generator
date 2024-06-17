@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: uuid-container
-        image: pranit039/uuid-generator:v20240614
+        image: pranit039/uuid-generator:v20240617_1
         ports:
         - containerPort: 8080
   replicas: 3
